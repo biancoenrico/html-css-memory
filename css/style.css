@@ -52,6 +52,7 @@ h1{
     position: relative;
     overflow: hidden;
     background-image: url(../img/pattern.png);
+    background-size: contain;
 } 
         /*hover*/
 
