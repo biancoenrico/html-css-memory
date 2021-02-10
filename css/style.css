@@ -1,0 +1,125 @@
+    /*reset*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+    /*common*/
+img{
+    margin-top: 10px;
+    height: 70%;
+}
+
+body{
+    background-color: #5dbe65;
+}
+
+    /*header*/
+h1{
+    font-family: 'Nerko One', cursive;
+    font-size: 50px;
+    color: white;
+}
+
+    /*main*/
+.card-name{
+    position: absolute;
+    bottom: 10px;
+    left: 15%;
+    font-size: 30px;
+    font-family: 'Nerko One', cursive;
+    color: orangered;
+}
+
+    /*all img*/
+.container{
+    width: 65%;
+    margin: auto;
+    text-align: center;
+}
+
+.card{
+    width: 20%;
+    height: 200px;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+    background-image: url(../img/pattern.png);
+    background-size: contain;
+    background-color: ivory;
+}
+
+    /*balloon active img*/
+.active{
+    width: 20%;
+    height: 200px;
+    display: inline-block;
+    margin: 10px;
+    padding: 5px;
+    overflow: hidden;
+    position: relative;
+    background-size: contain;
+    background-color: ivory;
+}
+.active-name{
+    position: absolute;
+    bottom: 10px;
+    left: 22%;
+    font-size: 30px;
+    font-family: 'Nerko One', cursive;
+    color: orangered;
+}
+ 
+        /*hover*/
+
+    /*hover card img*/
+.card img{
+    display: none;
+}
+
+.card:hover{
+    background-image: none;
+}
+
+.card:hover img{
+    display: inline-block;
+}
+
+    /*hover img name*/
+.card span{
+    display: none;
+}
+
+.card:hover{
+    background-image: none;
+}
+
+.card:hover span{
+    display: inline-block;
+}
+
+    /*hover balloon name*/
+.active .active-name{
+    color: black;
+}
+
+.active:hover{
+    background-image: none;
+}
+
+.active:hover .active-name{
+    color: orangered;
+}
+/*end main*/
+
+/*footer*/
+
+footer{
+    font-size: 20px;
+    font-family: 'Nerko One', cursive;
+    margin-bottom: 200px;
+}
+
