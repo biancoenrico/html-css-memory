@@ -23,10 +23,14 @@ h1{
 }
 
     /*main*/
-.card-name{
+.card-name .activename{
     position: absolute;
     bottom: 10px;
-    left: 15%;
+    display: inline-block;
+    text-align: center;
+}
+
+.row{
     font-size: 30px;
     font-family: 'Nerko One', cursive;
     color: orangered;
@@ -38,41 +42,17 @@ h1{
     margin: auto;
     text-align: center;
 }
-
-.card{
+.card,.active {
+    margin: 10px;
+    padding: 5px;
     width: 20%;
     height: 200px;
     display: inline-block;
-    margin: 10px;
-    padding: 5px;
-    overflow: hidden;
+    background-color: ivory;
     position: relative;
+    overflow: hidden;
     background-image: url(../img/pattern.png);
-    background-size: contain;
-    background-color: ivory;
-}
-
-    /*balloon active img*/
-.active{
-    width: 20%;
-    height: 200px;
-    display: inline-block;
-    margin: 10px;
-    padding: 5px;
-    overflow: hidden;
-    position: relative;
-    background-size: contain;
-    background-color: ivory;
-}
-.active-name{
-    position: absolute;
-    bottom: 10px;
-    left: 22%;
-    font-size: 30px;
-    font-family: 'Nerko One', cursive;
-    color: orangered;
-}
- 
+} 
         /*hover*/
 
     /*hover card img*/
@@ -85,6 +65,10 @@ h1{
 }
 
 .card:hover img{
+    display: inline-block;
+}
+
+.card.active img{
     display: inline-block;
 }
 
@@ -102,15 +86,16 @@ h1{
 }
 
     /*hover balloon name*/
-.active .active-name{
+.active .activename{
     color: black;
+    display: inline-block;
 }
 
-.active:hover{
+.active{
     background-image: none;
 }
 
-.active:hover .active-name{
+.active:hover .activename{
     color: orangered;
 }
 /*end main*/
